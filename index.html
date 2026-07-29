@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>长沙-香港亲子行程表｜8月14日-17日</title>
+  <style>
+    :root {
+      --bg: #f6f7f4;
+      --ink: #1e2528;
+      --muted: #647075;
+      --line: #dce1dd;
+      --card: #ffffff;
+      --accent: #0f766e;
+      --accent-2: #b45309;
+      --soft: #e8f3f1;
+      --soft-2: #fff3df;
+      --danger: #b42318;
+      --shadow: 0 8px 28px rgba(25, 39, 41, .08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(246, 247, 244, .94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+      padding: 14px 16px 12px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    .sub {
+      margin: 5px 0 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    nav {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    nav a {
+      text-align: center;
+      text-decoration: none;
+      color: var(--accent);
+      background: var(--soft);
+      border: 1px solid #cfe6e2;
+      border-radius: 8px;
+      padding: 8px 4px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    main {
+      width: min(780px, 100%);
+      margin: 0 auto;
+      padding: 16px 14px 34px;
+    }
+
+    .notice {
+      background: #fff8ea;
+      border: 1px solid #f1d9a8;
+      border-radius: 8px;
+      padding: 12px;
+      color: #69430a;
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+
+    .day {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      margin: 14px 0;
+      overflow: hidden;
+    }
+
+    .day-head {
+      padding: 14px 14px 12px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(90deg, var(--soft), #fff);
+    }
+
+    .date {
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    h2 {
+      margin: 2px 0 3px;
+      font-size: 19px;
+      letter-spacing: 0;
+    }
+
+    .day-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .timeline {
+      padding: 6px 0;
+    }
+
+    .item {
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 10px;
+      padding: 12px 14px;
+      border-bottom: 1px solid #eef1ef;
+    }
+
+    .item:last-child { border-bottom: 0; }
+
+    .time {
+      color: var(--accent-2);
+      font-weight: 800;
+      font-size: 13px;
+      padding-top: 2px;
+    }
+
+    .item h3 {
+      margin: 0 0 4px;
+      font-size: 16px;
+      letter-spacing: 0;
+    }
+
+    .item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-top: 9px;
+    }
+
+    .links a, .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 7px 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      border: 1px solid var(--line);
+      color: var(--ink);
+      background: #fff;
+    }
+
+    .links a.primary {
+      color: #fff;
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .checklist {
+      display: grid;
+      gap: 8px;
+      margin: 12px 0 2px;
+    }
+
+    label {
+      display: flex;
+      gap: 9px;
+      align-items: flex-start;
+      padding: 10px;
+      background: #fafbf9;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    input[type="checkbox"] {
+      width: 19px;
+      height: 19px;
+      accent-color: var(--accent);
+      flex: 0 0 auto;
+      margin-top: 1px;
+    }
+
+    .box {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      padding: 14px;
+      margin: 14px 0;
+    }
+
+    .box h2 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+
+    .small {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .warn {
+      color: var(--danger);
+      font-weight: 700;
+    }
+
+    .footer-space {
+      height: 72px;
+    }
+
+    .bottom-bar {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 12;
+      background: rgba(255,255,255,.95);
+      border-top: 1px solid var(--line);
+      padding: 10px 12px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9px;
+      backdrop-filter: blur(10px);
+    }
+
+    button {
+      border: 0;
+      border-radius: 8px;
+      min-height: 42px;
+      padding: 10px 12px;
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .save { background: var(--accent); color: #fff; }
+    .reset { background: var(--soft-2); color: #6f4200; }
+
+    @media (min-width: 640px) {
+      header { padding-left: max(18px, calc((100vw - 780px) / 2)); padding-right: max(18px, calc((100vw - 780px) / 2)); }
+      .grid { grid-template-columns: repeat(2, 1fr); }
+      h1 { font-size: 26px; }
+      .item { grid-template-columns: 70px 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>长沙到香港亲子行程表</h1>
+    <div class="sub">2026年8月14日-17日｜2位妈妈 + 2位12岁孩子｜往返高铁</div>
+    <nav>
+      <a href="#d1">8/14</a>
+      <a href="#d2">8/15</a>
+      <a href="#d3">8/16</a>
+      <a href="#d4">8/17</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="notice">
+      高铁车次、乐园开放时间、门票和港大预约会随日期变动。出发前以 12306、香港迪士尼、海洋公园和香港大学官方页面为准。
+    </section>
+
+    <section class="box">
+      <h2>出发前必办</h2>
+      <div class="checklist">
+        <label><input type="checkbox" data-key="prep-pass">4人港澳通行证和有效赴港签注</label>
+        <label><input type="checkbox" data-key="prep-train">购买长沙南 ⇄ 香港西九龙高铁票</label>
+        <label><input type="checkbox" data-key="prep-hku">提前预约 8月14日 香港大学访客入校</label>
+        <label><input type="checkbox" data-key="prep-disney">购买 8月16日 香港迪士尼门票并确认入园要求</label>
+        <label><input type="checkbox" data-key="prep-ocean">购买 8月15日 海洋公园门票</label>
+        <label><input type="checkbox" data-key="prep-weather">带雨衣、防晒、充电宝、轻便鞋和孩子证件</label>
+      </div>
+    </section>
+
+    <section class="day" id="d1">
+      <div class="day-head">
+        <div class="date">8月14日 周五</div>
+        <h2>抵港 + 香港大学 + 维港</h2>
+        <p>第一天轻松走城市线，避免刚到就排大项目。</p>
+      </div>
+      <div class="timeline">
+        <div class="item">
+          <div class="time">上午</div>
+          <div>
+            <h3>长沙南出发，抵达香港西九龙</h3>
+            <p>建议选早班高铁。抵达后先过关、换港币少量现金、办八达通或直接用移动支付。</p>
+            <div class="links">
+              <a class="primary" href="https://www.12306.cn/" target="_blank">12306</a>
+              <a href="https://www.highspeed.mtr.com.hk/" target="_blank">香港高铁</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">中午</div>
+          <div>
+            <h3>入住或寄存行李</h3>
+            <p>推荐住西九龙、柯士甸、佐敦、尖沙咀一带，后续去乐园和购物都顺。</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">下午</div>
+          <div>
+            <h3>香港大学打卡</h3>
+            <p>路线：港大站 A2 出口 → 本部大楼 → 陆佑堂 → 大学街。周五访客入校通常需要预约。</p>
+            <div class="links">
+              <a class="primary" href="https://tourist-registration-form.hku.hk/?lang=sc" target="_blank">港大预约</a>
+              <a href="https://maps.google.com/?q=The+University+of+Hong+Kong" target="_blank">打开地图</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">晚上</div>
+          <div>
+            <h3>尖沙咀维港夜景</h3>
+            <p>星光大道、K11 Musea、海港城，20:00 看幻彩咏香江。遇到恶劣天气可能取消。</p>
+            <div class="links">
+              <a href="https://maps.google.com/?q=Avenue+of+Stars+Hong+Kong" target="_blank">星光大道</a>
+              <a href="https://maps.google.com/?q=K11+MUSEA" target="_blank">K11 Musea</a>
+              <a href="https://maps.google.com/?q=Harbour+City+Hong+Kong" target="_blank">海港城</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="day" id="d2">
+      <div class="day-head">
+        <div class="date">8月15日 周六</div>
+        <h2>香港海洋公园一日</h2>
+        <p>水族馆、熊猫、缆车和山上项目，适合12岁孩子。</p>
+      </div>
+      <div class="timeline">
+        <div class="item">
+          <div class="time">09:30</div>
+          <div>
+            <h3>到达海洋公园</h3>
+            <p>地铁南港岛线到海洋公园站。建议开园前后到，少排队。</p>
+            <div class="links">
+              <a class="primary" href="https://www.oceanpark.com.hk/en/park-information/park-calendar" target="_blank">开放日历</a>
+              <a href="https://maps.google.com/?q=Ocean+Park+Hong+Kong" target="_blank">打开地图</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">上午</div>
+          <div>
+            <h3>海滨乐园区</h3>
+            <p>先看海洋奇观、水族馆、熊猫馆，再根据排队情况安排儿童和家庭项目。</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">下午</div>
+          <div>
+            <h3>山上区 + 缆车</h3>
+            <p>坐缆车上山，玩动感项目，看海景。怕晒的话把户外项目安排在下午晚些时候。</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">晚上</div>
+          <div>
+            <h3>铜锣湾轻购物</h3>
+            <p>如果体力够，去 Times Square、SOGO 或希慎广场吃饭逛街；累了就直接回酒店。</p>
+            <div class="links">
+              <a href="https://maps.google.com/?q=Times+Square+Hong+Kong" target="_blank">Times Square</a>
+              <a href="https://maps.google.com/?q=SOGO+Causeway+Bay" target="_blank">SOGO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="day" id="d3">
+      <div class="day-head">
+        <div class="date">8月16日 周日</div>
+        <h2>香港迪士尼一日</h2>
+        <p>当天只安排迪士尼，给排队、演出和夜间烟花留足时间。</p>
+      </div>
+      <div class="timeline">
+        <div class="item">
+          <div class="time">早上</div>
+          <div>
+            <h3>提前到迪士尼乐园</h3>
+            <p>从市区坐地铁到欣澳，换迪士尼线。建议开园前到，先进热门区。</p>
+            <div class="links">
+              <a class="primary" href="https://www.hongkongdisneyland.com/" target="_blank">迪士尼官网</a>
+              <a href="https://maps.google.com/?q=Hong+Kong+Disneyland" target="_blank">打开地图</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">上午</div>
+          <div>
+            <h3>热门项目优先</h3>
+            <p>建议先看 Frozen、灰熊山谷、明日世界等排队较久区域，现场用官方 App 看等待时间。</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">下午</div>
+          <div>
+            <h3>演出 + 拍照 + 购物</h3>
+            <p>午后最热，适合穿插室内演出、商店和餐厅。孩子想买周边可集中在下午。</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">晚上</div>
+          <div>
+            <h3>夜间表演后返程</h3>
+            <p>看完夜间城堡表演再回市区。地铁人多，提前约好集合点。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="day" id="d4">
+      <div class="day-head">
+        <div class="date">8月17日 周一</div>
+        <h2>东涌奥莱购物 + 高铁返程</h2>
+        <p>妈妈们重点购物，孩子也能在商场里吃饭休息。</p>
+      </div>
+      <div class="timeline">
+        <div class="item">
+          <div class="time">上午</div>
+          <div>
+            <h3>退房，前往东荟城名店仓</h3>
+            <p>Citygate Outlets 位于东涌，常见运动、户外、箱包、轻奢和童装折扣品牌。</p>
+            <div class="links">
+              <a class="primary" href="https://www.citygateoutlets.com.hk/" target="_blank">东荟城官网</a>
+              <a href="https://maps.google.com/?q=Citygate+Outlets+Hong+Kong" target="_blank">打开地图</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">中午</div>
+          <div>
+            <h3>商场午餐 + 最后采购</h3>
+            <p>控制好购物时间，返程高铁当天不建议压点。买多了可以现场整理行李。</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="time">下午</div>
+          <div>
+            <h3>返回香港西九龙站</h3>
+            <p>建议至少提前 60-90 分钟到站，预留地铁、安检和出入境时间。</p>
+            <div class="links">
+              <a href="https://maps.google.com/?q=Hong+Kong+West+Kowloon+Station" target="_blank">西九龙站</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="box">
+      <h2>每日携带</h2>
+      <div class="grid">
+        <span class="pill">港澳通行证</span>
+        <span class="pill">八达通/支付工具</span>
+        <span class="pill">雨衣或折叠伞</span>
+        <span class="pill">防晒和帽子</span>
+        <span class="pill">充电宝</span>
+        <span class="pill">水杯</span>
+      </div>
+      <p class="small"><span class="warn">天气提醒：</span>8月香港炎热多雨，台风或暴雨可能影响乐园项目和户外表演。</p>
+    </section>
+
+    <div class="footer-space"></div>
+  </main>
+
+  <div class="bottom-bar">
+    <button class="save" type="button" id="saveBtn">保存勾选</button>
+    <button class="reset" type="button" id="resetBtn">清空勾选</button>
+  </div>
+
+  <script>
+    const boxes = document.querySelectorAll('input[type="checkbox"][data-key]');
+    boxes.forEach((box) => {
+      box.checked = localStorage.getItem(box.dataset.key) === "1";
+      box.addEventListener("change", () => {
+        localStorage.setItem(box.dataset.key, box.checked ? "1" : "0");
+      });
+    });
+
+    document.getElementById("saveBtn").addEventListener("click", () => {
+      boxes.forEach((box) => localStorage.setItem(box.dataset.key, box.checked ? "1" : "0"));
+      alert("已保存到这台手机的浏览器。");
+    });
+
+    document.getElementById("resetBtn").addEventListener("click", () => {
+      boxes.forEach((box) => {
+        box.checked = false;
+        localStorage.removeItem(box.dataset.key);
+      });
+    });
+  </script>
+</body>
+</html>
