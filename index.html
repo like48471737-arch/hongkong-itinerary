@@ -229,6 +229,16 @@
       color: var(--muted);
     }
 
+    .route {
+      margin-top: 8px;
+      padding: 9px 10px;
+      border-left: 3px solid var(--accent);
+      background: #f1f7f5;
+      border-radius: 6px;
+      color: #294044;
+      font-size: 13px;
+    }
+
     .warn {
       color: var(--danger);
       font-weight: 700;
@@ -292,6 +302,18 @@
     </section>
 
     <section class="box">
+      <h2>固定信息</h2>
+      <div class="grid">
+        <span class="pill">酒店：香港珀丽酒店</span>
+        <span class="pill">地址：铜锣湾信德街8号</span>
+        <span class="pill">最近地铁：铜锣湾站 F1 出口步行约5分钟</span>
+        <span class="pill">备用地铁：天后站 B 出口步行约10分钟</span>
+        <span class="pill">往返高铁站：香港西九龙站</span>
+        <span class="pill">出行原则：地铁优先，行李多或暴雨时再打车</span>
+      </div>
+    </section>
+
+    <section class="box">
       <h2>出发前必办</h2>
       <div class="checklist">
         <label><input type="checkbox" data-key="prep-pass">4人港澳通行证和有效赴港签注</label>
@@ -315,6 +337,7 @@
           <div>
             <h3>长沙南出发，抵达香港西九龙</h3>
             <p>建议选早班高铁。抵达后先过关、换港币少量现金、办八达通或直接用移动支付。</p>
+            <div class="route">地铁优先：香港西九龙站 → 步行至柯士甸站 → 屯马线到红磡 → 东铁线到金钟 → 港岛线到铜锣湾 → F1 出口步行约5分钟到香港珀丽酒店。行李多可从西九龙直接打车到酒店。</div>
             <div class="links">
               <a class="primary" href="https://www.12306.cn/" target="_blank">12306</a>
               <a href="https://www.highspeed.mtr.com.hk/" target="_blank">香港高铁</a>
@@ -325,7 +348,8 @@
           <div class="time">中午</div>
           <div>
             <h3>入住或寄存行李</h3>
-            <p>推荐住西九龙、柯士甸、佐敦、尖沙咀一带，后续去乐园和购物都顺。</p>
+            <p>到酒店办理入住或寄存行李。香港珀丽酒店位于铜锣湾，周边吃饭和购物方便。</p>
+            <div class="route">已确定入住：香港珀丽酒店。酒店在铜锣湾，后续去港大、中环、铜锣湾购物和迪士尼都可以优先用地铁。</div>
           </div>
         </div>
         <div class="item">
@@ -333,6 +357,7 @@
           <div>
             <h3>中环 + 太平山顶</h3>
             <p>路线：中环地铁站 → 山顶缆车总站 → 太平山顶。天气好就上山看维港，排队太久则改逛中环、置地广场和大馆。</p>
+            <div class="route">地铁优先：铜锣湾站 → 港岛线到中环站 → J2 出口步行到山顶缆车总站。若山顶缆车排队久，改为中环站步行去置地广场或大馆。</div>
             <div class="links">
               <a class="primary" href="https://maps.google.com/?q=The+Peak+Tram+Central+Terminus" target="_blank">山顶缆车</a>
               <a href="https://maps.google.com/?q=The+Peak+Hong+Kong" target="_blank">太平山顶</a>
@@ -345,6 +370,7 @@
           <div>
             <h3>尖沙咀维港夜景</h3>
             <p>星光大道、K11 Musea、海港城，20:00 看幻彩咏香江。遇到恶劣天气可能取消。</p>
+            <div class="route">地铁优先：中环站 → 荃湾线到尖沙咀站，步行去星光大道/K11 Musea/海港城。回酒店：尖沙咀站 → 荃湾线到金钟 → 港岛线到铜锣湾。</div>
             <div class="links">
               <a href="https://maps.google.com/?q=Avenue+of+Stars+Hong+Kong" target="_blank">星光大道</a>
               <a href="https://maps.google.com/?q=K11+MUSEA" target="_blank">K11 Musea</a>
@@ -367,6 +393,7 @@
           <div>
             <h3>香港大学校园打卡</h3>
             <p>周六游客通常无需提前预约。路线：港大站 A2 出口 → 本部大楼 → 陆佑堂 → 大学街，控制在 1.5-2 小时。</p>
+            <div class="route">地铁优先：铜锣湾站 → 港岛线直达香港大学站 → A2 出口。周六通常无需预约，但遇到大学特别安排或极端天气以现场/官网为准。</div>
             <div class="links">
               <a class="primary" href="https://www.hku.hk/visitors/visiting-hku.html" target="_blank">港大访客说明</a>
               <a href="https://maps.google.com/?q=The+University+of+Hong+Kong" target="_blank">打开地图</a>
@@ -378,6 +405,7 @@
           <div>
             <h3>港大附近轻松午餐</h3>
             <p>从港大去坚尼地城或中环吃午餐。天气热的话优先选商场餐厅，少在户外走。</p>
+            <div class="route">地铁优先：香港大学站 → 港岛线到坚尼地城或中环。想少走路就选中环/香港站连通商场用餐。</div>
           </div>
         </div>
         <div class="item">
@@ -385,6 +413,7 @@
           <div>
             <h3>中环室内购物</h3>
             <p>置地广场、IFC、太古广场适合妈妈们看品牌和护肤品，孩子可以找咖啡店或书店休息。</p>
+            <div class="route">地铁优先：中环站/香港站步行可到置地广场和 IFC；去太古广场可从中环站坐港岛线到金钟站，站内连通商场。</div>
             <div class="links">
               <a href="https://maps.google.com/?q=LANDMARK+Hong+Kong" target="_blank">置地广场</a>
               <a href="https://maps.google.com/?q=IFC+Mall+Hong+Kong" target="_blank">IFC</a>
@@ -397,6 +426,7 @@
           <div>
             <h3>铜锣湾晚餐 + 逛街</h3>
             <p>去 Times Square、SOGO 或希慎广场。当天以室内为主，累了就直接回酒店，为迪士尼留体力。</p>
+            <div class="route">地铁优先：中环/金钟 → 港岛线到铜锣湾站。Times Square 走 A 出口，SOGO/希慎广场走 D/F 出口，结束后步行回香港珀丽酒店。</div>
             <div class="links">
               <a href="https://maps.google.com/?q=Times+Square+Hong+Kong" target="_blank">Times Square</a>
               <a href="https://maps.google.com/?q=SOGO+Causeway+Bay" target="_blank">SOGO</a>
@@ -418,6 +448,7 @@
           <div>
             <h3>提前到迪士尼乐园</h3>
             <p>从市区坐地铁到欣澳，换迪士尼线。建议开园前到，先进热门区。</p>
+            <div class="route">地铁优先：铜锣湾站 → 港岛线到中环站，站内步行换香港站 → 东涌线到欣澳站 → 迪士尼线到迪士尼站。</div>
             <div class="links">
               <a class="primary" href="https://www.hongkongdisneyland.com/" target="_blank">迪士尼官网</a>
               <a href="https://maps.google.com/?q=Hong+Kong+Disneyland" target="_blank">打开地图</a>
@@ -443,6 +474,7 @@
           <div>
             <h3>夜间表演后返程</h3>
             <p>看完夜间城堡表演再回市区。地铁人多，提前约好集合点。</p>
+            <div class="route">返程地铁：迪士尼站 → 迪士尼线到欣澳 → 东涌线到香港站 → 步行换中环站 → 港岛线到铜锣湾站 → 步行回酒店。</div>
           </div>
         </div>
       </div>
@@ -460,6 +492,7 @@
           <div>
             <h3>退房，前往东荟城名店仓</h3>
             <p>Citygate Outlets 位于东涌，常见运动、户外、箱包、轻奢和童装折扣品牌。</p>
+            <div class="route">地铁优先：铜锣湾站 → 港岛线到中环站，站内步行换香港站 → 东涌线到东涌站 → C 出口直达东荟城。带行李购物不方便，可先问酒店能否寄存后再返回取行李。</div>
             <div class="links">
               <a class="primary" href="https://www.citygateoutlets.com.hk/" target="_blank">东荟城官网</a>
               <a href="https://maps.google.com/?q=Citygate+Outlets+Hong+Kong" target="_blank">打开地图</a>
@@ -477,7 +510,8 @@
           <div class="time">下午</div>
           <div>
             <h3>返回香港西九龙站</h3>
-            <p>建议至少提前 60-90 分钟到站，预留地铁、安检和出入境时间。</p>
+            <p>建议至少提前 60-90 分钟到香港西九龙站，预留地铁、安检和出入境时间。</p>
+            <div class="route">地铁优先：东涌站 → 东涌线到九龙站 → 按指示经圆方/行人通道步行到香港西九龙站。若拖着大件行李且时间紧，可从东荟城直接打车去西九龙站。</div>
             <div class="links">
               <a href="https://maps.google.com/?q=Hong+Kong+West+Kowloon+Station" target="_blank">西九龙站</a>
             </div>
